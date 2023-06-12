@@ -77,3 +77,44 @@
 
 // console.log(pole)
 
+// 5. Write a JavaScript program to rotate the string 'w3resource' in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.  
+// Click me to see the solution
+
+// const divek = document.querySelector("div");
+
+// setInterval(function () {
+//     divek.style.transform = 'rotate(90deg)'
+// }, 1000);
+
+// 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.  
+// Click me to see the solution
+
+// const outputDiv = document.querySelector(".outputDiv")
+// const inputValue = document.querySelector("input")
+
+
+// inputValue.addEventListener("change", handleFunction = (e) => {
+//     e.target.value % 4 === 0 ? 
+//     outputDiv.innerHTML = "rok jest przestępny" :
+//     outputDiv.innerHTML = "rok nie jest przestępny"  
+// })
+
+// 7. Write a JavaScript program to find out if 1st January will be a Sunday between 2014 and 2050.  
+// Click me to see the solution
+
+// let arrayWithYears = []
+// for(let i = 2014; i< 2050 ; i++){
+//     const dayToCheck = new Date(`${i}-01-01`)
+//     if(dayToCheck.getDay() === 0){
+//         arrayWithYears.push(dayToCheck)
+//     }
+//     console.log(arrayWithYears)
+// }
+
+
+
+
+
+
+
+
