@@ -111,6 +111,56 @@
 //     console.log(arrayWithYears)
 // }
 
+// 8. Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise "Not matched".  
+// Click me to see the solution.
+
+// const userNumber = document.querySelector("input")
+// const outputDiv = document.querySelector(".outputDiv")
+
+// const randomNumber = Math.round(Math.random()*20)
+// console.log(randomNumber)
+
+
+// const handleNumber = (event) => {
+//     const liczba = event.target.value
+
+//     if (liczba > randomNumber){
+//     outputDiv.textContent = "podana liczba jest za duża"
+//     }
+//     else if (liczba < randomNumber){
+//     outputDiv.textContent = "podana liczba jest za mała"
+//     }
+//     else {
+//         outputDiv.textContent = "trafiłeś"
+//     }
+// }
+
+// userNumber.addEventListener("input", handleNumber)
+
+// 9. Write a JavaScript program to calculate the days left before Christmas.  
+// Click me to see the solution
+
+// const presentDate = new Date()
+// const christmasTime = new Date("12/24/2023 12:00:00")
+
+// console.log(presentDate)
+// console.log(christmasTime)
+
+// const subtractTime = christmasTime - presentDate
+// console.log(subtractTime)
+
+// const result = Math.round((((subtractTime)/1000)/3600)/24)
+// console.log(result)
+
+// 10. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user). 
+
+
+const input1 = document.getElementById("input1").value
+const input2 = document.getElementById("input2").value
+document.querySelector(".outputDiv").textContent = input1 * input2
+
+
+
 
 
 
