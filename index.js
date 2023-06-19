@@ -44,8 +44,6 @@
 
 // console.log(timer)
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 // 2. Write a JavaScript program to print the current window contents.  
 // Click me to see the solution
 
@@ -155,16 +153,124 @@
 // 10. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user). 
 
 
-const input1 = document.getElementById("input1").value
-const input2 = document.getElementById("input2").value
-document.querySelector(".outputDiv").textContent = input1 * input2
+// function someFunction(){
+//     let num1 = document.querySelector('.number1').value
+//     let num2 = document.querySelector('.number2').value
+//     document.getElementById('outputDiv').textContent = num1 * num2
+//     console.log(input1JS)
+//     console.log(input2JS)
+// }
+
+// 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+// Expected Output :
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C
+
+// function someFunction(){
+//     num1 = document.querySelector('.number1').value 
+//     document.getElementById('outputDiv').textContent = (num1 * 1.8)+32
+// }
+
+// 12. Write a JavaScript program to get the website URL (loading page).  
+// Click me to see the solution
+
+// document.getElementById('outputDiv').textContent = document.URL
+
+// 13. Write a JavaScript exercise to create a variable using a user-defined name.  
+
+// function someFunction () {
+    
+//     let userVariable = document.getElementById('number1').value
+
+//     document.getElementById('outputDiv').textContent = 
+//     `zmienna użytkownika nazywa się ${userVariable}`
+// }
+
+// 14. Write a JavaScript exercise to get the filename extension.  
+// Click me to see the solution
+
+// function someFunction(){
+//     const userVariable = document.getElementById('number1').value
+//     const convertVariable = userVariable.split('.')
+//     document.getElementById('outputDiv').textContent = convertVariable[1]
+
+// }
+
+// 15. Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference.  
+// Click me to see the solution
+
+// function someFunction(){
+//     const userVariable = document.getElementById('number1').value
+    
+//     let result = userVariable - 13 > 13 ? Math.abs((userVariable-13)*2) : userVariable - 13
 
 
+//     document.getElementById('outputDiv').textContent = result
+
+// }
+
+// 16. Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.  
+// Click me to see the solution
+    
+// let result = 0
+
+// function someFunction () {
+    
+//     let userVariable1 = document.getElementById('number1').value
+//     let userVariable2 = document.getElementById('number2').value
+
+//     if(userVariable1 === userVariable2){
+//          result = (parseInt(userVariable1)+parseInt(userVariable2))*3
+//     }
+//     else{ 
+//         result = parseInt(userVariable1)+parseInt(userVariable2)
+//     }
+
+//     document.getElementById('outputDiv').textContent = result
+// }
+
+// 17. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19.  
+// Click me to see the solution
+
+// function someFunction(){
+//     const userVariable = document.getElementById('number1').value
+    
+//     let result = userVariable - 19 > 19 ? Math.abs((userVariable-19)*3) : Math.abs(userVariable - 19)
 
 
+//     document.getElementById('outputDiv').textContent = result
 
+// }
 
+// 18. Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.  
+// Click me to see the solution
 
+// function pair(x,y) {
+//     return((x == 50)||(y == 50)||(x + y == 50))
+// }
+
+// console.log(pair(50,0))
+// console.log(pair(0,50))
+// console.log(pair(25,25))
+// console.log(pair(5,5))
+
+// 19. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.  
+// Click me to see the solution
+
+function numero(x){
+    if(x > 20){
+        if(x < 100){
+            return true
+        }
+        else if( x < 400){
+            return true
+        }
+    }
+}
+
+console.log(numero(21))
+console.log(numero(1))
 
 
 
