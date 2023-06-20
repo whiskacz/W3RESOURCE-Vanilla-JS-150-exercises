@@ -258,19 +258,153 @@
 // 19. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.  
 // Click me to see the solution
 
-function numero(x){
-    if(x > 20){
-        if(x < 100){
-            return true
-        }
-        else if( x < 400){
-            return true
-        }
-    }
-}
+// function numero(x){
+//     if(x > 20){
+//         if(x < 100){
+//             return console.log("20<x<100")
+//         }
+//         else if( x < 400){
+//             return console.log("100<x<400")
+//         }
+//         else {
+//             console.log("za duza liczba")
+//         }
+//     }
+//     else {
+//         console.log("za mala liczba liczba")
+//     }
+// }
 
-console.log(numero(21))
-console.log(numero(1))
+// console.log(numero(101))
+
+// 20. Write a JavaScript program to check two given integers whether one is positive and another one is negative.  
+// Click me to see the solution
+
+// function checkValues (x,y){
+//     return ((x > 0 && y < 0) || (x < 0 && y > 0))
+// }
+
+// console.log(checkValues(1,2))
+// console.log(checkValues(1,-1))
+// console.log(checkValues(-1,6))
+
+// 21. Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.  
+
+// function addPy(text){
+//     if(text.slice(0,2) === "Py"){
+//         return text
+//     }
+//     else {
+//         return "Py"+text
+//     }
+// }
+
+// console.log(addPy("ka"))
+
+// 22. Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.  
+
+// function stringModify(text,n){
+//     return text.slice(0,n) + text.slice(n+1)
+// }
+
+// console.log(stringModify("karamba",3))
+
+// 23. Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.  
+
+// function letterChange(text){
+//     const textModified = text.slice(1,-1)
+//     const firstLetter = text.slice(0,1)
+//     const lastLetter = text.slice(-1)
+//     return lastLetter+textModified+firstLetter
+// }
+
+// console.log(letterChange("kaktus"))
+
+// 24. Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.  
+
+// function addLetter(text){
+//     const letter  = text.charAt(0);
+//     return letter + text + letter
+// }
+
+// console.log(addLetter("abcdefghijklmnoprstuvwxyz"))
+
+//25. Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7. 
+
+// function isMultiply(x){
+//     return x % 3 === 0 && x % 7 === 0
+// }
+
+// console.log(isMultiply(42))
+
+// 26. Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.  
+
+// function someProgram(text) {
+//     if(text.length > 3){
+//     const textToAdd = text.slice(-3)
+//     return textToAdd + text + textToAdd}
+//     else {
+//         console.log("tekst za krótki")
+//     }
+// }
+
+// console.log(someProgram("abcdefghijklmnopqrstuvwxyz"))
+
+// 27. Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.  
 
 
+// function someProgram(text){
+//     return text.slice(0,4) === "Java"
+// }
 
+// console.log(someProgram("Java"))
+
+// 28. Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them falls within the range.
+
+// function someProgram(x, y) {
+//     return (x < 49 || x > 99)||(x < 49 || y > 99)
+// }
+
+// console.log(someProgram(50, 551))
+
+// 29. Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.  
+
+// function someProgram(x, y, z) {
+//     return (x > 49 && x < 99)||(y > 49 && y < 99)||(z > 49 && z < 99)
+// }
+
+// console.log(someProgram(5, 50, 5))
+
+// 30. Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.  
+
+// function scriptCheck(text){
+//     return text.substr(4,6) === "script"
+// }
+
+// console.log(scriptCheck("aaaaaaaaa"))
+// console.log(scriptCheck("1234script"))
+
+// 31. Write a JavaScript program to find the largest of three given integers.  
+
+// function theBiggest(a,b,c){
+//     result = a
+//     if(b > result){
+//         result = b
+//     }
+//     if(c > result){
+//         result = c
+//     }
+//     return result
+// }
+
+// console.log(theBiggest(5,22,3))
+
+// 32. Write a JavaScript program to find the closest value to 100 from two numerical values.  
+// Click me to see the solution
+
+// function theClosestValue(a,b){
+//     Math.abs(100 - a) < Math.abs(100 - b) ? console.log(`${a} jest bliżej`) : console.log(`${b} jest bliżej`)
+// }
+
+
+// theClosestValue(100,99)
