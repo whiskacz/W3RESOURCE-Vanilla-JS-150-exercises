@@ -408,3 +408,206 @@
 
 
 // theClosestValue(100,99)
+
+// 33. Write a JavaScript program to check whether two numbers are in the range 40..60 or 70..100 inclusive.  
+
+// function twoNumbers (x,y) {
+//     return ((x >=40 && x <=60)||(x >=70 && x <= 100)) && ((y >=40 && y <=60)||(y >=70 && y <= 100))
+// }
+
+// console.log(twoNumbers(69,80))
+
+// 34. Write a JavaScript program to find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive.  
+
+// function twoNumber(x,y){
+//     if((x >=40 && x <=60) && (y >=40 && y <=60))
+//     {return x > y ? x : y}
+//     else {
+//      return "zle liczby"}
+// }
+
+// console.log(twoNumber(15,55))
+
+// 35. Write a program to check whether a specified character exists between the 2nd and 4th positions in a given string.  
+
+// function checking(x,y){
+//     for(let i = 1; i< 4; i++){
+//         if(x === y[i]){
+//             return `wystepuje na pozycji ${i+1}`
+//         }
+//     }
+// }
+// console.log(checking("a","bbbaaabbb"))
+
+
+// 36. Write a JavaScript program that checks whether the last digit of three positive integers is the same.  
+
+// function lastDigit(x, y, z){
+//     if(x > 0){
+//         console.log(x.toString().slice(-1) )
+//         console.log(y.toString().slice(-1) )
+//         console.log(z.toString().slice(-1) )
+//         console.log((x.toString().slice(-1) == y.toString().slice(-1) == z.toString().slice(-1)))
+
+//        return (x.toString().slice(-1) == y.toString().slice(-1)) && (x.toString().slice(-1) == z.toString().slice(-1))
+//     }
+// }
+
+// console.log(lastDigit(125553, 1234654643, 352425464654643))
+
+// 37. Write a JavaScript program to produce a new string that has the first 3 characters in lower case from a given string. If the string length is less than 3 convert all the characters to upper case.  
+
+// function fromLowerToUpper(text){
+//     return text.length < 3 ? text.toUpperCase() : text.slice(0,3).toLowerCase() + text.slice(3)
+// }
+
+// console.log(fromLowerToUpper("ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
+
+// 38. Write a JavaScript program to check a student's total marks in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam" the student will receive A+ grade and total marks must be greater than or equal to 90. If the student gets an A+ grade, return true, otherwise return false.  
+
+// function marks (nums){
+    
+//     let result = 0
+//     for(let num of nums){
+//         result += num
+//         console.log(result)
+//     };
+//     if(result >= 90){
+//            return "A+"
+//     }
+//     else return "za malo pkt"
+// }
+
+// console.log(marks([1,2,3,50]))
+
+// 39. Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80.
+
+// function sumOf(a,b){
+//     return a + b >= 50 && a + b <=80 ? 65 : 80
+// }
+
+// console.log(sumOf(80,4))
+
+// 40. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.  
+
+// function difference(a,b){
+//     return (a === 8 || b === 8) || Math.abs(a - b) === 8 
+// }
+
+// console.log(difference(-4,4))
+
+// 41. Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
+
+// function threeNumbers(a,b,c){
+//     if(a === b && a === c){
+//         return 30
+//     }
+//     if(a === b || a === c ||  b === c){
+//         return 40
+//     }
+//     else {
+//         return 20
+//     }
+// }
+
+// console.log(threeNumbers(1,1,1))
+
+// 42. Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode.  
+// Note: Strict mode -> 10, 15, 31 : Soft mode -> 24, 22, 31 or 22, 22, 31
+
+// function strictOrSoftMode(a,b,c){
+//     if(c > b && b > a){
+//         return "strict mode"
+//     }
+//     if(c > b)
+//         return "soft mode"
+//     else 
+//         return "nie rośnie"
+//     }
+
+//     console.log(strictOrSoftMode(3,1,1))
+
+// 43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit. 
+
+// function sameDigit(a,b,c) {
+//     if(a > 0 && b > 0 && c > 0){
+//      if( a.toString().slice(-1) === b.toString().slice(-1) || a.toString().slice(-1) === c.toString().slice(-1) || b.toString().slice(-1) === c.toString().slice(-1))
+//      return true
+//     else {return "nie sa takie same"}
+//     }
+// }
+
+// console.log(sameDigit(3,2,1))
+
+// 44. Write a JavaScript program to check from three given integers whether a number is greater than or equal to 20. It is less than the others.  
+
+// const someNumbers =  [7,8,5,1,3]
+// let sum = 0
+// function sumChecking(nummers){
+//     for(let nummer of nummers){
+//         sum += nummer
+//         console.log(sum)
+//         if(sum > 20)
+//         return
+//     }
+// }
+
+// sumChecking(someNumbers)
+
+// 45. Write a JavaScript program that checks two integer values and returns true if either one is 15 or if their sum or difference is 15.  
+
+// function someCheckingProgram(a,b){
+//     return (a === 15 || b === 15) || a + b === 15 
+// }
+
+// console.log(someCheckingProgram(1,13))
+
+// 46. Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11.  
+
+// function someProgram(a,b){
+//     if(a > 0 && b > 0){
+//         return ((a % 7 === 0 || a % 11 === 0) && (b % 7 !== 0 || b % 11 !== 0)) ||
+//         ((a % 7 !== 0 || a % 11 !== 0) && (b % 7 === 0 || b % 11 === 0))
+//     }
+// }
+
+// console.log(someProgram(7,7))
+
+// 47. Write a JavaScript program to check whether a given number exists in the range 40..10000.  
+// For example 40 presents in 40 and 4000
+
+
+// function someProgram(x){
+//     return x > 40 && x < 10_000 
+// }
+
+// console.log(someProgram(5555555))
+
+// function reverseProgram(text){
+//     let reversedText = []
+//     for(letter of text){
+//         reversedText.unshift(letter)
+//     }
+//     return reversedText.toString()
+// }
+
+// console.log(reverseProgram("abcdefghijklmnopqrstuvwxyz"))
+
+// 49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  
+
+function caesarCode (text){
+    let myArray = []
+    for(let i = 0; i<text.length; i++){
+       myArray.push(text.charCodeAt(i+1))
+    }
+    let newArray = myArray.map(element => {
+        String.fromCharCode(element)
+    })
+    console.log(newArray)
+    let newString = newArray.join(" ")
+    console.log(newString)
+
+    
+}
+
+console.log(caesarCode("sometext"))
