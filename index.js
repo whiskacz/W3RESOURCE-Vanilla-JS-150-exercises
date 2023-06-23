@@ -595,19 +595,168 @@
 
 // 49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  
 
-function caesarCode (text){
-    let myArray = []
-    for(let i = 0; i<text.length; i++){
-       myArray.push(text.charCodeAt(i+1))
-    }
-    let newArray = myArray.map(element => {
-        String.fromCharCode(element)
-    })
-    console.log(newArray)
-    let newString = newArray.join(" ")
-    console.log(newString)
+// function caesarCode (text){
+//     let myArray = []
+//     for(let i = 0; i<text.length; i++){
+//        myArray.push(text.charCodeAt(i+1))
+//     }
+//     let newArray = myArray.map(element => {
+//         String.fromCharCode(element)
+//     })
+//     console.log(newArray)
+//     let newString = newArray.join(" ")
+//     console.log(newString)
 
     
-}
+// }
 
-console.log(caesarCode("sometext"))
+// console.log(caesarCode("sometext"))
+
+// 50. Write a JavaScript program to capitalize the first letter of each word in a given string.  
+
+// function splitterProgram (text) {
+//     let newText = text.split(" ")
+//     console.log(newText)
+//     let newArray = []
+//     let superNewText = newText.forEach(element => {
+//         newArray.push(element[0].toUpperCase() + element.slice(1))
+
+//     });
+//     console.log(newArray)
+//     return  newArray.toString()
+// }
+
+// console.log(splitterProgram("jakis tekscik tu jest"))
+
+// 51. Write a JavaScript program to convert a given number into hours and minutes.  
+
+// function hoursAndMinutes(x){
+//     return `godzin ${Math.floor(x / 60)}, minut ${ x % 60}`
+// }
+
+// console.log(hoursAndMinutes(185))
+
+// 52. Write a JavaScript program to convert letters of a given string alphabetically.  
+
+// let convertedArray = []
+//     for(let i=0; i<text.length; i++){
+//         convertedArray.push(text.charCodeAt(i))
+
+// function sortingProgram(text){
+//         return text.split("").sort().join(" ")
+// }
+
+// console.log(sortingProgram("bgdfkajnbfja"))
+
+// 53. Write a JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string. 
+
+
+// function someProgram(text){
+//     // return text.indexOf("   ")
+//     return text.includes("   ")
+// }
+
+// console.log(someProgram("tral   alala"))
+
+// 54. Write a JavaScript program to count the number of vowels in a given string.  
+
+// const vowels = [ "a", "e", "i", "o", "u"]
+
+// function someProgram(text){
+//     return text.replace(/[^aeiou]/g,"").length}
+
+
+// console.log(someProgram("adscbvuisdfgdf"))
+
+// 55. Write a JavaScript program to check whether a given string contains an equal number of p's and t's.  
+
+
+// function vowels(text){
+//    return text.replace(/[p]/g,"").length === text.replace(/[t]/g,"").length
+// }
+
+// console.log(vowels("ptptptpptt"))
+
+// 56. Write a JavaScript program to divide two positive numbers and return the result as string with properly formatted commas.  
+
+// n1 = 80;
+// n2 = 6;
+  
+// var div = Math.round(n1 / n2).toString(),
+//         result_array = div.split("");
+
+//     if (div >= 1000)
+//        {
+//         for (var i = div.length - 3; i > 0; i -= 3) 
+//         {
+//             result_array.splice(i, 0, ",");
+//         }
+//           result_array;
+//     }
+// console.log(result_array);
+
+// 57. Write a JavaScript program to create one string of specified copies (positive numbers) of a given string.  
+
+// function copies(text,n){
+//     return text.repeat(n)
+// }
+
+// console.log(copies("abrakadabra",3))
+
+// 58. Write a JavaScript program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above. 
+
+// function lastThreeWords(text,n){
+//     return text.slice(-3).repeat(n)
+// }
+
+// console.log(lastThreeWords("jakis tekscik", 4))
+
+// 59. Write a JavaScript program to extract the first half of a even string.  
+
+// function evenText(text){
+//     if(text.length % 2 === 0)
+//         return text.slice(0,text.length/2)
+// }
+
+// console.log(evenText("1234"))
+
+// 60. Write a JavaScript program to create a new string without the first and last characters of a given string.  
+
+// function deleteSomeLetter(text){
+//     return text.slice(1,-1)
+// }
+
+// console.log(deleteSomeLetter("12345"))
+
+// 61. Write a JavaScript program to concatenate two strings except for their first character.  
+
+// function concatenateProgram(a,b){
+//     return a.substring(1) + b.substring(1)
+// }
+
+
+// 62. Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three.  
+
+// function threeLetters(text){
+//     if(text.length >=3){
+//         return text.slice(-3)+ text.slice(0,3)
+//     }
+// }
+
+// console.log(threeLetters("111333"))
+
+// 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater than or equal to three.  
+
+// function threeLetters(text){
+//     if(text.length >=3 && text.length % 2 !== 0){
+//         return text.slice((text.length/2)-1.5,(text.length/2)+1.5)
+//     }
+// }
+
+// console.log(threeLetters("123456789"))
+
+
+
+function textConcatenate(a,b){
+    return a.length >= b.length ? a+b : 
+}
