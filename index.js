@@ -755,8 +755,165 @@
 
 // console.log(threeLetters("123456789"))
 
+// 64. Write a JavaScript program to concatenate two strings and return the result. If the length of the strings does not match, then remove the characters from the longer string.  
+
+// function textConcatenate(a,b){
+//     if(a.length > b.length){
+//         return a.slice(0,b.length)
+//     }
+//     if(b.length > a.length){
+//         return b.slice(0,a.length)
+//     }
+//     else return "are the same"
+// }
+
+// console.log(textConcatenate("aaa","bbbbbb"))
+
+// 65. Write a JavaScript program to test whether a string ends with "Script". The string length must be greater than or equal to 6.  
+
+// function scriptProgram(text){
+//     return text.slice(-6) === "Script"
+// }
+
+// console.log(scriptProgram("tasertasefasScript"))
+
+// 66. Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.  
+
+// function citiesProgram(text){
+//     return text.slice(0,3) === "New" || text.slice(0,3) === "Los"
+// }
+
+// console.log(citiesProgram("Los Angeles"))
+
+// 67. Write a JavaScript program to create a new string from a given string. This program removes the first and last characters of the string if the first or last character is 'P'. Return the original string if the condition is not satisfied.  
+
+// function returnFunction(text){
+//     return text.slice(0,1) === "P" || text.slice(-1) === "P" ? console.log(text.slice(1,-1)) : console.log(text)
+// }
+
+// returnFunction("asdfadfaawkoP")
+
+// 68. Write a JavaScript program to create a new string using the first and last n characters from a given string. The string length must be larger than or equal to n
+
+// const cutFunction = (text,n) => {
+   
+//     return text.length > n ? text.slice(n,-n) : "za krótki tekst"
+// }
+
+// console.log(cutFunction("abcdefghij",2))
+
+// 69. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.  
+
+// const myArray = [1,2,3,4,5,7]
+// const reduceProgram = myArray.reduce((a,b) => a + b, 0)
+
+// console.log(reduceProgram)
+// let sum = 0
+// function someProgram(values){values.forEach(element => sum +=element); return sum}
+
+// console.log(someProgram(myArray))
+
+// 70. Write a JavaScript program to rotate the elements left in a given array of integers of length 3.  
+// const myArray = [1,2,3,4,5,6]
+
+// const rotateFunction = x => {
+//     let newArray = []
+//      x.map(element => newArray.unshift(element))
+//      return newArray
+// }
+
+// console.log(rotateFunction(myArray))
+
+// console.log(newArray = myArray.toReversed())
 
 
-function textConcatenate(a,b){
-    return a.length >= b.length ? a+b : 
-}
+// 71. Write a JavaScript program to check whether 1 appears in the first or last position of a given array of integers. The array length must be larger than or equal to 1.  
+
+// const x = [2, 3, 4, 5, 1]
+
+// const checkingFunction = x => { return (x[0] === 1) || (x[x.length-1] === 1) ? true : false}
+
+// console.log(x[x.length-1])
+
+// // console.log(checkingFunction(x))
+
+// 72. Write a JavaScript program to check whether the first and last elements are the same in a given array of integers of length 3.  
+
+// someValues = [1,2,3,5,1]
+
+// const integerArray = x => {
+//     if(x.length > 3){
+//       return x[0] === x[x.length-1] 
+//     }     
+// }
+
+// console.log(integerArray(someValues))
+
+// 73. Write a JavaScript program to reverse the elements of a given array of integers of length 3.  
+// Click me to see the solution
+
+// const ala = [1,2,3,5,6]
+
+// const reversedArray = x => { return x.toReversed()}
+
+// console.log(reversedArray(ala))
+
+// 74. Write a JavaScript program to find the largest value between the first and last elements and set all the other elements to that value. Display the updated array. 
+
+// const someArray = [1,2,3,4,5]
+
+// const someFunction = x => {
+//     const maxValue = Math.max(...x)
+ 
+//     return console.log(x.map(element => element = maxValue))
+// }
+
+// someFunction(someArray)
+
+// 77. Write a JavaScript program to test whether an array of integers of length 2 contains 1 or 3.  
+
+// const array = [30,30]
+
+// function someProgram(x){
+//     x.map(element => {
+//         if(element === 1){
+//             console.log('zawiera 1')
+//         }
+//         if(element === 3){
+//             console.log('element zawiera 3')
+//         }
+//     })
+// }
+
+// someProgram(array)
+
+// 78. Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or 3.  
+
+// function someProgram(x){
+//     return x.indexOf(1) == -1 || x.indexOf(3) == -1
+// }
+
+// console.log(someProgram(array))
+
+// 79. Write a JavaScript program to test whether a given array of integers contains 30 and 40 twice. The array length should be 0, 1, or 2. 
+
+// function someProgram(x){
+//     let a = x[0] 
+//     let b = x[1]
+    
+//     return ((a === 30) && (b === 30)) || ((a === 40) && (b === 40))
+// }
+
+// console.log(someProgram(array))
+
+// const someArray = [1,2]
+
+// // 80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.  
+
+// function swapProgram(x){
+//     let y = [];
+//     y.push(x[-1],x[0])
+//     return y
+// }
+
+// console.log(swapProgram(someArray))
