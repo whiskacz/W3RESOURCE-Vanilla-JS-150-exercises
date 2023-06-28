@@ -917,3 +917,443 @@
 // }
 
 // console.log(swapProgram(someArray))
+
+// 81. Write a JavaScript program to add two digits to a given positive integer of length two.  
+
+// const someFunction = x => {
+//     return x % 10 + Math.floor(x / 10)
+// }
+// console.log(someFunction(25))
+
+// 82. Write a JavaScript program to add two positive integers without carrying.  
+
+// const carryingProgram = (n1,n2) => {
+//     return Math.floor(((n1/10)+(n2/10))*10)
+// }
+
+// console.log(carryingProgram(900,200))
+
+// 83. Write a JavaScript program to find the longest string from a given array of strings.  
+// const checkingProgram = x => {
+//     let result = ""
+//     x.map(element => {
+//         if(element.length > result.length)
+//         {result = element}      
+// }
+// )
+   
+//     return `${result}  ${result.length} liter`
+// }
+// console.log(checkingProgram(['adfadsf',"adfasdfadf","adsfasdfasdfasdfa"]))
+
+// 84. Write a JavaScript program to replace each character in a given string with the next in the English alphabet.  
+// Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
+
+// const caesarsCode2 = text => {
+//     let convertedText = text.split('')
+//     let newArray = []
+//     console.log(convertedText)
+//     for(letter of convertedText){
+//         if(letter.charAt() === 'z'.charAt()){
+//             newArray.push('a'.charAt())
+//         }
+//         else newArray.push(letter.charAt())
+//         console.log((letter).charAt()+1)
+//     }
+//     return newArray.join("")
+// }
+// console.log(caesarsCode2("litwo ojczyzno moja"))
+
+// 85. Write a JavaScript program to divide a given array of positive integers into two parts. First element belongs to the first part, second element belongs to the second part, and third element belongs to the first part and so on. Now compute the sum of two parts and store it in an array of size two.  
+
+// const newArray = [1,2,3,4,5,6]
+
+// const reduceProgram = x => {
+    
+//     const result = [0,0]
+//     for(let i = 0; i<x.length ; i++){
+//         if(i % 2 === 0 ) result[0] += x[i]
+//         else result[1] += x[i]
+//     }
+
+//     return result
+// }
+
+// console.log(reduceProgram(newArray))
+
+// 86. Write a JavaScript program to find the types of a given angle.  
+
+//     Types of angles:
+//     Acute angle: An angle between 0 and 90 degrees.
+//     Right angle: An 90 degree angle.
+//     Obtuse angle: An angle between 90 and 180 degrees.
+//     Straight angle: A 180 degree angle.
+
+// const triangleAngle = x => {
+//     switch (x) {
+//         case(x < 90): console.log("Acute angle");
+//         break;
+//         case(x = 90): console.log("Right angle");
+//         break;
+//         case(x > 90 && x < 180): console.log("Obtuse angle");
+//         break;
+//         default: console.log("bad name")
+//     }
+// }
+// triangleAngle(90)
+
+// 87. Write a JavaScript program to determine if two arrays of integers of the same length are similar. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.  
+
+// const arr1 = [1, 2, 3, 4, 5, 6, 8]
+// const arr2 = [1, 5, 6, 4, 8567, 243, 0]
+
+// const arriesCompare = (x,y) => {
+//     for(let i = 0; i < x.length; i++){
+        
+//         if(x[i].toString() == y[i].toString())
+        
+//         {return "są podobne"}
+        
+//     }
+// }
+// console.log(arriesCompare(arr1,arr2))
+
+// 88. Write a JavaScript program that takes two integers and a divisor. If the given divisor divides both integers and does not divide either, two specified integers are similar. Check whether two integers are similar or not.  
+
+// const someProgram = (l1,l2,divider) => {
+//     return l1 % divider !== 0 && l2 % divider !== 0
+// }
+
+
+// console.log(someProgram(1,3,3))
+
+// 89. Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.  
+// For example x = 10, y = 30 and z = 300, we can replace $ with a multiple operator (*) to obtain x * y = z
+
+// const someProgram = (x,y,z) => {
+//     return x + y === z || x * y === z || x / y === z || x - y === z
+// }
+
+// console.log(someProgram(18,2,36))
+
+// 90. Write a JavaScript program to find the kth greatest element in a given array of integers.  
+
+// const someArray = [6,1,3,4,56,7]
+
+// const someProgram = (x,y) => {
+//     const sortedArray = y.sort((a,b) => a-b)
+//     console.log(sortedArray)
+//     return sortedArray[x-1]
+// }
+
+// console.log(someProgram(5, someArray))
+
+// 91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers (numbers that follow each other in order) in a given array of positive integers. 
+
+//  const someArray = [1, 2, 3, 14, 5]
+
+// const someProgram = (x,y) => {
+//     const sortedArray = y.sort((a,b) => a-b)
+   
+//     return x > 1 && x < y.length ? sortedArray[x-2]+ someArray[x] : false
+// }
+
+// console.log(someProgram(4, someArray))
+
+// 92. Write a JavaScript program to find the maximum difference between any two adjacent elements of a given array of integers. 
+
+// const someArray = [1, 2, 3, 14, 5]
+
+// const someProgram = x => {
+//     const maxValue = Math.max(...someArray)
+//     const minValue = Math.min(...someArray)
+//     return maxValue - minValue
+// }
+
+// console.log(someProgram(someArray))
+
+// 94. Write a JavaScript program to find the number appearing most frequently in a given array of integers. 
+
+//const someArray = [1,2,3,4,5,6,2,3,5,1,3,5,7,3,23,5,]
+
+
+// const counter = (arr, value) => arr.filter(element => element === value).length
+
+// const globalProgram = x => {
+//     dataSummary = {}
+//         for(let element of x){
+//             if(dataSummary[element]){
+//                 dataSummary[element] +=1
+//             } else {
+//                 dataSummary[element] = 1
+//             }
+//         } return dataSummary
+// }
+
+
+// console.log(globalProgram(someArray))
+
+// 95. Write a JavaScript program to replace all numbers with a specified number in an array of integers. 
+
+// const newProgram = (x,y) => {
+//     let newArray = [];
+//     x.map(element => { newArray.push(element = y)     
+//     })
+//     return newArray
+// }
+
+
+// console.log(newProgram(someArray,5))
+
+// 96. Write a JavaScript program to compute the sum of the absolute differences of consecutive numbers in a given array of integers. 
+
+// const someProgram = x => {
+//     newObj = []
+//     for(let i = 1 ; i < x.length ; i++){
+//         newObj.push(Math.abs(x[i]) - Math.abs(x[i-1]))
+//     } return newObj
+// }
+
+// console.log(someProgram(someArray))
+
+// 98. Write a JavaScript program to change the case of the minimum number of letters to make a given string written in upper case or lower case. 
+
+// const someProgram = text =>{
+//     let upper = 0
+//     for ( letter of text){
+//         if(letter === letter.toUpperCase()){
+//             upper++
+//         }
+//     } if(upper >= text.length/2){
+//         return text.toUpperCase()
+//     } else return text.toLowerCase()
+// }
+
+// console.log(someProgram("PAwko"))
+
+// 99. Write a JavaScript program to check whether it is possible to rearrange the characters of a given string. This is in such a way that it will become equal to another given string. 
+
+// const someProgram = (x,y) => {
+//    const newX = x.sort().toString()
+//    const newY = y.sort().toString()
+//     return newX === newY
+// }
+
+// console.log(someProgram([1,23,56],[56,23,1]))
+
+// 100. Write a JavaScript program to check if there is at least one element in two given sorted arrays of integers. 
+
+// const someProgram = (a,b,x) => {
+//     return a.sort().filter(element => element === x).length > 0 && b.sort().filter(element => element === x).length > 0
+// }
+
+// console.log(someProgram([1,2,34],[1,2,5,6,7],3))
+
+// 101. Write a JavaScript program to check whether a given string contains only Latin letters and no two uppercase and no two lowercase letters are in adjacent positions. 
+
+// const someProgram = text =>{
+//     let Upper = 0
+//     let Downer = 0
+//     for (element of text){if(element.charCodeAt() > 64 && element.charCodeAt() < 91) Upper++
+//    else if (element.charCodeAt() > 96 && element.charCodeAt() < 123) Downer++
+   
+// }console.log(Upper)
+// console.log(Downer)
+// }
+// console.log(someProgram(["A","B","C", "z"]))
+
+// 102. Write a JavaScript program to find the number of inversions of a given array of integers. 
+// Note: Two elements of the array a stored at positions i and j form an inversion if a[i] > a[j] and i < j.
+
+// 103. Write a JavaScript program to find the maximum number of a given positive integer by deleting exactly one digit of the given number.
+
+// 104. Write a JavaScript program to find two elements of an array such that their absolute difference is not larger than a given integer. However, it is as close as possible to the integer.
+
+// const someProgram = (x,n)=> {
+//     let summary = 0
+//     for(let i = 0; i<x.length; i++){
+//         for(let j = i + 1; j < x.length; j++){
+//             const result = Math.abs(x[i] - x[j]) 
+//              if(result <= n){
+//                 summary = result
+//             }
+//         }
+//     }return summary
+// }
+
+// console.log(someProgram([1,2,3,4],2))
+
+// 105. Write a JavaScript program to find the number of times to replace a given number with the sum of its digits. This is until it converts to a single-digit number. 
+
+// const funnyProgram = (x) => {
+//     let digitalArray = []
+//     let sum = 0
+
+//         function callbackProgram (x){
+//         let newX = x.toString().split("")
+//         for(let i = 0; i< newX.length; i++)
+//         {digitalArray.push(+newX[i])}
+        
+//         for(element of digitalArray){
+//             sum +=element
+//         }  console.log(sum) 
+//         return sum
+// }   if(sum >=10){
+//     callbackProgram(sum)
+// }
+// return sum
+// }
+// console.log(funnyProgram(156))
+
+// 106. Write a JavaScript program to divide an integer by another integer as long as the result is an integer and return the result. 
+
+
+// function dividing(x,y){
+//         while( x % y === 0){
+//            x /= y
+//     } return x
+// }
+
+// console.log(dividing(100,4))
+
+// 107. Write a JavaScript program to find the number of sorted pairs formed by arrays of integers. This is such that one element in the pair is divisible by the other one. 
+
+// const someArray = [1, 2, 3, 5, 5, 5, 2, 3, 5, 2, 4, 1]
+
+// function someProgram(x){
+//     let sum = 0
+//     const newArray = x.sort((a,b) => a-b)
+//     for(let i = 0; i < x.length; i++){
+//         if(x[i+1] / x[i] === 1){
+//             sum++
+//         }
+//     } return sum
+// }
+// console.log(someProgram(someArray))
+
+
+// 108. Write a JavaScript program to create the dot products of two given 3D vectors. 
+// Note: The dot product is the sum of the products of the corresponding entries of the two sequences of numbers.
+
+
+// const a = [1,212341,312341]
+// const b = [1,213241234,31341341]
+
+// function theDot(a,b){
+//     let sum = 0
+//     for(let i = 0; i < a.length ; i++){
+//         sum +=a[i] * b[i]
+//     } return sum
+// }
+
+// console.log(theDot(a,b))
+
+
+// 109. Write a JavaScript program to sort an array of all prime numbers between 1 and a given integer. 
+
+// function someProgram(x) {
+//     let result = {}
+   
+//     for(let i = 1; i <= x ; i++){
+//             for( let j = 2; j < i; j++){
+//                 if( i % j === 0){
+//                     result[i] = true
+//                     break
+//                 }
+        
+//             } 
+//         }   return result 
+// }
+
+
+// console.log(someProgram(27))
+
+// 110. Write a JavaScript program to find the number of even values in sequence before the first occurrence of a given number. 
+
+// function someProgram(x){
+//     const dataObj = []
+//     for(let i = 1; i < x; i++){
+//         if(i % 2 === 0){
+//             dataObj.push(i)
+//         } 
+       
+//     }return dataObj.length
+// }
+
+// console.log(someProgram(156))
+
+// 111. Write a JavaScript program to check a number from three given numbers where two numbers are equal. Find the third one. 
+
+// 112. Write a JavaScript program to find the number of trailing zeros in the decimal representation of the factorial of a given number. 
+
+// function findZeros(x){
+//     let result = 1
+//     let nummer = 0
+//     for(let i = 1; i <= x; i++){
+//         result *=i
+//     } 
+//     while (result % 10 === 0){
+//         result /=10
+//         nummer++
+//     } return nummer
+// }
+
+// console.log(findZeros(16))
+
+// 113. Write a JavaScript program to calculate the sum of n + n/2 + n/4 + n/8 + .... where n is a positive integer and all divisions are integers. 
+
+// function someProgram(x){
+//     let sum = 0
+//     for(let i = 1, j=1; j <= x ; i*2, j++){
+//         sum += j/8
+//     } return sum
+// }
+
+// console.log(someProgram(5))
+
+// 114. Write a JavaScript program to check whether a given string represents a correct sentence or not. 
+// A string is considered a correct sentence if it starts with a capital letter and ends with a full stop (.) 
+
+// function capitalizeProgram(x){
+//     const first = x.slice(0,1)
+//     console.log(first)
+//     const last = x[x.length-1]
+//     console.log(x.charCodeAt(first))
+//     console.log(x.charCodeAt(first) >= 65 && first <= 90)
+//     console.log(last === ".")
+//     return (x.charCodeAt(first) >= 65 && first <= 90) && last === "."
+// }
+
+// console.log(capitalizeProgram("Aaa."))
+
+// 116. Write a JavaScript program to find all the possible options to replace the hash in a string (Consists of digits and one hash (#)) with a digit to produce an integer divisible by 3. 
+// For a string "2*0", the output should be : ["210", "240", "270"]
+
+
+// function someProgram(){
+//     let result = []
+//     for(let i = 0; i<=9; i++){
+//         let newValue = parseInt("2"+ i +"0")
+       
+//         if(newValue % 3 === 0){
+//             result.push(newValue)
+//         }
+//     }return result
+// }
+
+// console.log(someProgram())
+
+// 120. Write a JavaScript program to check if a point lies strictly inside the circle. 
+// Input:
+// Center of the circle (x, y)
+// Radius of circle: r
+// Point inside a circle (a, b)
+
+// function isPointInsideTheCircle(x,y,r,a,b){
+
+//     return Math.sqrt(((Math.abs(a-x)**2)+(Math.abs(b-y)**2))) < r
+// }
+
+// console.log(isPointInsideTheCircle(2,4,6,0,0))
+// console.log(isPointInsideTheCircle(6,8,6,0,0))
+
