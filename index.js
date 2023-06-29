@@ -1357,3 +1357,109 @@
 // console.log(isPointInsideTheCircle(2,4,6,0,0))
 // console.log(isPointInsideTheCircle(6,8,6,0,0))
 
+// function increasingDecreasingSequence(x){
+//     direction = x[1] - x[0]
+//     for(let i = 0; i < x.length - 1; i++){
+//         if(direction * (x[i+1] - x[i] <=0))
+//         return false
+//     } return true
+// }
+
+// console.log(increasingDecreasingSequence([8,4,2]))
+
+// 123. Write a JavaScript program to find out if the members of a given array of integers are a permutation of numbers from 1 to a given integer. 
+
+// function norFunction(a,b){
+//     return !a && !b
+// }
+
+// console.log(norFunction(true,false))
+// console.log(norFunction(false,false))
+// console.log(norFunction(true,true))
+
+// 125. Write a JavaScript program to find the longest string in a given array. 
+
+// const someArray = ["12341", "gfadfafdafdasdf", "adfadfsdfsdfsfdsdfsdfsdfa", "dsfadfasdfafdas", "asdfasdf"]
+
+// function theLongest(x){
+//     result = ""
+//    for(el of x){
+//     if(el.length > result.length){
+//         result = el
+//     }   
+//    } return `the longest is ${result} with ${result.length} characters`
+// }
+
+// console.log(theLongest(someArray))
+
+// 126. Write a JavaScript program to get the largest even number from an array of integers. 
+
+// const someArray = [1,23,32423,422324,234,234,2,2342342,23434234,2,234242564,456450000000006]
+
+// function someProgram(x){
+// const newArray = x.sort((a,b)=> a - b)
+// const resultArray = []
+// for(el of newArray){
+//     if(el % 2 === 0){
+//         resultArray.push(el)
+//     }
+// }return resultArray[resultArray.length-1]
+// }
+// console.log(someProgram(someArray))
+
+// 127. Write a JavaScript program to reverse the order of bits in a integer. 
+
+
+// function someProgram(x){
+//     xToBin = x.toString(2).split("")
+//     for(let i = 0 ; i< 9 - xToBin.length; i++){
+//         xToBin.unshift("0")
+//     }
+//     console.log(xToBin)
+//     return parseInt(xToBin.reverse().join(""),2)
+// }
+
+// console.log(someProgram(33))
+
+// 128. Write a JavaScript program to find the smallest round number not less than a given value. 
+// Note: A round number is informally considered to be an integer that ends with one or more zeros.[3] So, 590 is rounder than 592, but 590 is less round than 600.
+
+// function someProgram(x){
+//     return Math.floor(x/10)* 10
+// }
+// console.log(someProgram(5132128))
+
+// function someProgram2(x){
+//     return (Math.ceil(x/10))*10
+// }
+
+// console.log(someProgram(5132128))
+
+// 129. Write a JavaScript program to find the smallest prime number strictly greater than a given number. 
+
+// function someProgram(x){
+//     for(let i = x+1;; i++){
+//         let isPrime = true;
+//         for(let j = 2;j*j<=i; j++){
+//             if(i % j === 0) {
+//             isPrime = false
+//             break;
+//             } 
+           
+//         }    
+//         if(isPrime) {
+//             return i
+//         }
+//     } 
+// }
+// console.log(someProgram(8))
+
+// 130. Write a JavaScript program to find the number of even digits in a given integer.
+
+function someProgram(x){
+    newX = toString(x.split(""))
+    console.log(newX)
+    for(let i = 0; i < x.length; i++){}
+}
+
+console.log(someProgram(33))
