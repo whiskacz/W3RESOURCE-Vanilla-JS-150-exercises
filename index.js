@@ -1456,10 +1456,167 @@
 
 // 130. Write a JavaScript program to find the number of even digits in a given integer.
 
+// function someProgram(x){
+//     result = 0
+//     newX = x.toString()
+//     for(el of newX){
+//         if(parseInt(el) % 2 === 0){
+//             result++
+//         }
+//     }  return result
+// }
+
+// console.log(someProgram(4444445234523453))
+
+// 131. Write a JavaScript program to create an array of prefix sums of the given array. 
+// In computer science, the prefix sum, cumulative sum, inclusive scan, or simply scan of a sequence of numbers 
+// x0, x1, x2, ... is a second sequence of numbers y0, y1, y2, ..., the sums of prefixes of the input sequence:
+// y0 = x0
+// y1 = x0 + x1
+// y2 = x0 + x1+ x2
+// ...
+
+
+
+// 133. Write a JavaScript program to check whether a given fraction is proper or not. 
+// Note: There are two types of common fractions, proper or improper. When the numerator and the denominator 
+// are both positive, the fraction is called proper if the numerator is less than the denominator, and improper otherwise.
+
 function someProgram(x){
-    newX = toString(x.split(""))
-    console.log(newX)
-    for(let i = 0; i < x.length; i++){}
+
 }
 
-console.log(someProgram(33))
+
+// 134. Write a JavaScript program to change the characters (lower case) in a string where a turns into z, b turns into y, c turns into x, ..., n turns into m, m turns into n, ..., z turns into a. 
+//97-122
+
+// function someProgram(text){
+//     dataObj = []
+//     const newText = text.toLowerCase().split("").join("")
+//     for(let i = 0; i<newText.length; i++){
+//        let char_code = newText.charCodeAt(i) - 97
+//        let change_char_code = 25 - char_code + 97
+//         console.log(change_char_code)
+//        dataObj.push(String.fromCharCode(change_char_code))
+//     } return dataObj.join("")
+
+// }
+// console.log(someProgram("litwo ojczyzno moja ty jestes jak zdrowie"))
+
+// 135. Write a JavaScript program to remove all characters from a given string that appear more than once. 
+
+// function someProgram(text){
+//     dataObj =[]
+//     const newText= text.split("")
+//     for(el of newText){
+//     if(newText.indexOf(el) === newText.lastIndexOf(el))
+//     dataObj.push(el)}
+//      return dataObj
+// }
+
+// console.log(someProgram("zcvzxcovzcv"))
+
+
+// 136. Napisz program w JavaScript, który zamieni pierwszą cyfrę ciągu (powinien mieć co najmniej jedną cyfrę) na znak $.
+
+// function someProgram(text){
+//     if(text.length >=1){
+//         return "$" + text.slice(1)
+//     }
+// }
+// console.log(someProgram("kotek"))
+
+// 141. Write a JavaScript program to find the number of elements in both arrays.  
+
+// const arr1 = [ 1,2,324523,324525,234,23452,234524,23452,3453]
+// const arr2 = [ 2,1,34534,3453,3453,3453]
+
+// function someProgram(x,y){
+//     result = 0
+//     for(let i = 0; i < x.length; i++){
+//         for(j = 0; j < y.length; j++)
+//         if(x[i] === y[j]){
+//             result++
+//         }
+//     }return result
+// }
+
+// console.log(someProgram(arr1, arr2))
+
+// 143. Write a JavaScript program to sort the strings of a given array of strings in order of increasing length.  
+// Note: Do not change the order if the lengths of two string are same.
+// const someArray = ["3214", "asdafa", "asdfasdfafas", "adfadfad", "asdafa"]
+// console.log(someArray)
+
+// function someProgram(x){
+//     for(let i = 0; i<x.length; i++){
+//         for(let j= i + 1; j < x.length; j++){
+//             if(x[i].length > x[j].length){
+//                 let m = x[i]
+//                 x[i] = x[j]
+//                 x[j] = m
+//             } 
+//         }
+//     } return x
+
+
+    
+// } 
+// console.log(someProgram(someArray))
+
+// 145. Write a JavaScript program to find the maximum integer n such that 1 + 2 + ... + n <= a given integer.  
+
+// function someRecursionProgram(x){
+//     let result = 0
+//     if(x) result = x + someRecursionProgram(x-1)
+//     return result
+
+// }
+// console.log(someRecursionProgram(5))
+
+// 147. Write a JavaScript program to compute the sum of all the digits that occur in a given string.  
+
+// function someProgram(x){
+//     let count = 0
+//     for(el of x){
+//         if(/[0-9]/.test(el)) count++
+//     } return count
+// }
+
+// console.log(someProgram("asdfa234123413412sdfaf324"))
+
+// 148. Write a JavaScript program to swap two halves of a given array of integers of even length.  
+
+// const someArray = [1,2,3,4,5,6]
+
+// function someProgram(x){
+   
+//     newArray =[]
+//     if(x.length % 2 === 0){
+//         halfOfArray = x.length/2
+//         for(let i = halfOfArray ; i< x.length; i++){
+//                 newArray.push(x[i])
+//              } 
+//         for (let i = 0; i < halfOfArray; i++){
+//             newArray.push(x[i])
+//         }
+//              return newArray
+//     }
+// }
+
+// console.log(someProgram(someArray))
+
+// 149. Write a JavaScript program to change the capitalization of all letters in a given string.  
+
+// function someProgram(text){
+//     let result = ""
+//     for(let i = 0; i < text.length ; i++){
+//         if(/[A-Z]/.test(text[i])) 
+//             result += text[i].toLowerCase() 
+//          else result += text[i].toUpperCase() 
+//     } return result
+// }
+
+// console.log(someProgram("aaaaAAAAbbA"))
+
+// 150. Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length.  
